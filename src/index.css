@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-menu {
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(192, 192, 192, .7);
+  border-right: 5px solid silver;
+  padding: 20px;
+  transition: transform .3s;
+  transform: translateX(-100%);
+}
+
+.active {
+  transform: translateX(0);
+}
